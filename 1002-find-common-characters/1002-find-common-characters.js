@@ -10,7 +10,6 @@ var commonChars = function (words) {
         word.split("").forEach((x) => {
             if (first.includes(x)) {
                 temp += x;
-                const index = first.indexOf(x);
                 first = first.replace(x, "");
             }
         })
